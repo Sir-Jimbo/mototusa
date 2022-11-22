@@ -1,0 +1,56 @@
+.blog {
+   &__card {
+      &--link {
+         display: block;
+         background: url(/images/blog/nuzhny-li-prava-na-krossovyy-mototsikl_preview_picture_568_435.jpg);
+         background: url(/images/blog/nuzhny-li-prava-na-krossovyy-mototsikl_preview_picture_568_435.webp);
+         background-position: center center;
+         background-repeat: no-repeat;
+         background-size: cover;
+      }
+
+      &--content {
+         display: flex;
+         flex-direction: column;
+         height: 100%;
+         padding: 25px;
+         background: $background-color-blog;
+         transition: opacity 0.3s;
+         color: $background-color-main;
+         z-index: 1;
+      }
+
+      &--title {
+         font-size: 26px;
+         font-weight: 700;
+         line-height: 1;
+         margin-bottom: 20px;
+      }
+
+      &--description {
+         font-size: 14px;
+         font-weight: 600;
+         line-height: 25px;
+         margin-bottom: 20px;
+      }
+
+      &--button {
+         display: inline-flex;
+         align-items: center;
+         margin-top: auto;
+         padding-bottom: 3px;
+         max-width: 110px;
+         font-size: 15px;
+         line-height: 18px;
+         border-bottom: 2px solid $background-color-main;
+         color: $background-color-main;
+         cursor: pointer;
+      }
+
+      &--icon {
+         width: 16px;
+         height: 8px;
+         margin-left: 5px;
+      }
+   }
+}

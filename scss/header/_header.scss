@@ -1,0 +1,142 @@
+.header {
+   padding-top: 10px;
+
+   &__logo {
+      display: block;
+      max-width: 48px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+
+      &--image {
+         max-width: 48px;
+      }
+   }
+
+   &__search {
+      margin-bottom: 10px;
+
+      &--form {
+         position: relative;
+      }
+      &--item {
+         position: relative;
+      }
+
+      &--input {
+         width: 100%;
+         height: 38px;
+         padding: 0 55px 0 17px;
+         border: 1px solid $color-border;
+         border-radius: 4px;
+         text-overflow: ellipsis;
+         font-family: inherit;
+         font-weight: 500;
+      }
+
+      &--button {
+         position: absolute;
+         right: 0;
+         top: 0;
+         background: none;
+         border: 0;
+         border-radius: 0;
+         padding: 2px 0 0 0;
+         width: 50px;
+         height: 100%;
+         font-size: 18px;
+         fill: $color-theme;
+      }
+
+      &--icon {
+         position: absolute;
+         width: 25px;
+         height: 25px;
+         top: 0;
+         right: 0;
+         left: 0;
+         bottom: 0;
+         margin: auto;
+      }
+   }
+
+   .nav {
+      &__container {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         background-color: $color-theme;
+         padding: 14px 10px;
+      }
+   }
+
+   .burger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      width: 30px;
+      height: 25px;
+
+      &__line {
+         display: block;
+         background-color: $color-burger-line;
+         border-radius: 1.5px;
+         width: 100%;
+         height: 3px;
+      }
+   }
+
+   &__icons {
+      display: flex;
+      align-items: center;
+   }
+
+   &__login {
+      margin-right: 15px;
+      &--icon {
+         width: 25px;
+         height: 25px;
+      }
+   }
+
+   &__compare {
+      position: relative;
+      margin-right: 15px;
+      &--icon {
+         width: 25px;
+         height: 25px;
+      }
+   }
+
+   &__cart {
+      position: relative;
+      margin-right: 15px;
+      &--icon {
+         width: 25px;
+         height: 25px;
+      }
+   }
+
+   &__count {
+      display: block;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: -5px;
+      top: -5px;
+      font-size: 12px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 16px;
+      color: $color-text;
+      background-color: $background-color-main;
+   }
+
+   &__phone {
+      &--icon {
+         width: 25px;
+         height: 25px;
+         fill: $background-color-main;
+      }
+   }
+}

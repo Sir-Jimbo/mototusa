@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Доставка мотоциклів з Європи, Японії та США в Україну">
+   <link rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@800&display=swap"
+      as="style" onload="this.onload=null;this.rel='stylesheet'">
+   <noscript>
+      <link rel="stylesheet"
+         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@800&display=swap">
+   </noscript>
+   <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
+   <noscript>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+   </noscript>
+   <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
+   <noscript>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+   </noscript>
+   <link rel="preload" href="css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+   <noscript>
+      <link rel="stylesheet" href="css/style.min.css">
+   </noscript>
+   <title>MotoTusa | Доставка мотоциклів з Європи, Японії та США в Україну</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <a class="header__logo" href="/" aria-label="logo">
+               <img class="header__logo--image" src="./images/logo.png" alt="MotoTusa" width="48" height="48">
+            </a>
+            <div class="header__search">
+               <form class="header__search--form" action="/search-results">
+                  <div class="header__search--item">
+                     <input class="header__search--input" type="text" name="q" placeholder="Поиск по сайту"
+                        autocomplete="off">
+                  </div>
+                  <button class="header__search--button" type="submit" aria-label="submit">
+                     <svg class="header__search--icon">
+                        <use href="./icons/sprite.svg#icon-search"></use>
+                     </svg>
+                  </button>
+               </form>
+            </div>
+         </div>
+         <nav class="nav">
+            <div class="nav__container">
+               <div class="burger">
+                  <span class="burger__line"></span>
+                  <span class="burger__line"></span>
+                  <span class="burger__line"></span>
+               </div>
+               <div class="header__icons">
+                  <a class="header__login" href="#" aria-label="login">
+                     <svg class="header__login--icon">
+                        <use href="./icons/sprite.svg#icon-login"></use>
+                     </svg>
+                  </a>
+                  <a class="header__compare" href="#" aria-label="compare">
+                     <svg class="header__compare--icon">
+                        <use href="./icons/sprite.svg#icon-compare"></use>
+                     </svg>
+                     <span class="header__count">0</span>
+                  </a>
+                  <a class="header__cart" href="#" aria-label="cart">
+                     <svg class="header__cart--icon">
+                        <use href="./icons/sprite.svg#icon-cart"></use>
+                     </svg>
+                     <span class="header__count">0</span>
+                  </a>
+                  <a class="header__phone" href="#" aria-label="phone">
+                     <svg class="header__phone--icon">
+                        <use href="./icons/sprite.svg#icon-phone"></use>
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <main class="main">
+         <section class="hero">
+            <h1>Мотоцикли з Європи, Японії та США</h1>
+            <div class="hero__banner first">
+               <div class="hero__filter">
+                  <div class="hero__filter--title">
+                     <span>ПО МОДЕЛИ МОТОТЕХНИКИ</span>
+                     <svg class="hero__filter--icon">
+                        <use href="./icons/sprite.svg#icon-arrow"></use>
+                     </svg>
+                  </div>
+                  <div class="hero__filter--content">
+                     <form class="hero__filter--form" action="/m/" method="post">
+                        <div class="hero__filter--items">
+                           <div class="hero__filter--item">
+                              <span> Марка</span>
+                              <svg class="hero__filter--icon">
+                                 <use href="./icons/sprite.svg#icon-arrow"></use>
+                              </svg>
+                           </div>
+                           <div class="hero__filter--item">
+                              <span>Модель</span>
+                              <svg class="hero__filter--icon">
+                                 <use href="./icons/sprite.svg#icon-arrow"></use>
+                              </svg>
+                           </div>
+                           <div class="hero__filter--item">
+                              <span>Объем двигателя</span>
+                              <svg class="hero__filter--icon">
+                                 <use href="./icons/sprite.svg#icon-arrow"></use>
+                              </svg>
+                           </div>
+                           <div class="hero__filter--item">
+                              <span>Год выпуска</span>
+                              <svg class="hero__filter--icon">
+                                 <use href="./icons/sprite.svg#icon-arrow"></use>
+                              </svg>
+                           </div>
+                        </div>
+                        <button class="hero__filter--button" type="submit" aria-label="filter submit">Подбор
+                           мотозапчастей</button>
+                     </form>
+                  </div>
+               </div>
+               <div class="hero__filter">
+                  <div class="hero__filter--title">
+                     <span>ПОДБОР МОТОШИН</span>
+                     <svg class="hero__filter--icon">
+                        <use href="./icons/sprite.svg#icon-arrow"></use>
+                     </svg>
+                  </div>
+                  <div class="hero__filter--content">
+                     <form class="hero__filter--form" action="/m/" method="post">
+                        <div class="hero__filter--items">
+                           <div class="hero__filter--item">
+                              <span> Марка</span>
+                              <svg class="hero__filter--icon">
+                                 <use href="./icons/sprite.svg#icon-arrow"></use>
+                              </svg>
+                           </div>
+                           <div class="hero__filter--item">
+                              <span>Модель</span>
+                              <svg class="hero__filter--icon">
+                                 <use href="./icons/sprite.svg#icon-arrow"></use>
+                              </svg>
+                           </div>
+                           <div class="hero__filter--item">
+                              <span>Объем двигателя</span>
+                              <svg class="hero__filter--icon">
+                                 <use href="./icons/sprite.svg#icon-arrow"></use>
+                              </svg>
+                           </div>
+                           <div class="hero__filter--item">
+                              <span>Год выпуска</span>
+                              <svg class="hero__filter--icon">
+                                 <use href="./icons/sprite.svg#icon-arrow"></use>
+                              </svg>
+                           </div>
+                        </div>
+                        <button class="hero__filter--button" type="submit" aria-label="filter submit">Выбрать</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <a class="hero__banner banner-link two" href="#" aria-label="banner link">
+               <div class="banner-link__title">ЭКИПИРОВКА</div>
+               <div class="banner-link__more">
+                  <span class="banner-link__description">Любых Размеров</span>
+                  <span class="banner-link__button">
+                     Подробнее
+                     <svg class="banner-link__icon">
+                        <use href="./icons/sprite.svg#icon-arrow-button"></use>
+                     </svg>
+                  </span>
+               </div>
+            </a>
+            <a class="hero__banner banner-link three" href="#" aria-label="banner link">
+               <div class="banner-link__title">ЗАПЧАСТИ OEM</div>
+               <div class="banner-link__more">
+                  <span class="banner-link__description">Любых Размеров</span>
+                  <span class="banner-link__button">
+                     Подробнее
+                     <svg class="banner-link__icon">
+                        <use href="./icons/sprite.svg#icon-arrow-button"></use>
+                     </svg>
+                  </span>
+               </div>
+            </a>
+         </section>
+         <section class="sale">
+            <div class="section-title">
+               <h2>Распродажа</h2>
+            </div>
+            <!-- Slider main container -->
+            <div class="swiper sale__slider">
+               <!-- Additional required wrapper -->
+               <div class="swiper-wrapper sale__wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide sale__slide">
+                     <div class="sale__card">
+                        <div class="sale__card--top">
+                           <a class="sale__card--link" href="#">
+                              <picture>
+                                 <source srcset="./images/gripsy-rulya-oxford-of690-black_preview_picture_203_165.webp"
+                                    type="image/webp">
+                                 <img
+                                    src="./images/manufactures/gripsy-rulya-oxford-of690-black_preview_picture_203_165.png"
+                                    alt="oxford" width="132" height="132">
+                              </picture>
+                           </a>
+                           <div class="sale__card--delivery">
+                              <svg class="sale__card--delivery-icon">
+                                 <use href="./icons/sprite.svg#icon-delivery"></use>
+                              </svg>
+                              <span>24h</span>
+                           </div>
+                        </div>
+                        <div class="sale__card--title">
+                           <a href="#">Грипсы руля c подогревом Oxford OF690 Black</a>
+                        </div>
+                        <div class="sale__card--side">
+                           <div class="sale__card--rating"></div>
+                           <div class="sale__card--bottom">
+                              <div class="sale__card--price">
+                                 <span>3604</span>
+                                 грн.
+                              </div>
+                              <div class="sale__card--availability">
+                                 <svg>
+                                    <use href="./icons/sprite.svg#icon-checkmark"></use>
+                                 </svg>
+                                 <span>В наличии</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="sale__card--icons">
+                           <a href="#" rel="nofollow" aria-label="favorite">
+                              <svg>
+                                 <use href="./icons/sprite.svg#icon-favorite"></use>
+                              </svg>
+                           </a>
+                           <a href="#" rel="nofollow" aria-label="compare">
+                              <svg>
+                                 <use href="./icons/sprite.svg#icon-balance"></use>
+                              </svg>
+                           </a>
+                           <a href="#" rel="nofollow" aria-label="list">
+                              <svg>
+                                 <use href="./icons/sprite.svg#icon-list"></use>
+                              </svg>
+                           </a>
+                        </div>
+                        <div class="sale__card--cart">
+                           <div class="sale__card--cart-button">
+                              <a class="sale__card--cart-add" href="#" aria-label="add-to-cart">Добавить в корзину</a>
+                              <a class="sale__card--cart-in" rel="nofollow" href="#" aria-label="in-cart">В корзине</a>
+                           </div>
+                           <div class="sale__card--cart-bottom">
+                              <a class="sale__card--cart-oneclick" href="#" aria-label="oneclick">Купить в 1 клик</a>
+                              <a class="sale__card--cart-parts" href="#" aria-label="credit">В рассрочку</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- If we need navigation buttons -->
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-button-next"></div>
+            </div>
+         </section>
+         <section class="popular">
+            <div class="section-title">
+               <h2>Популярные категории</h2>
+            </div>
+            <div class="swiper popular__slider">
+               <!-- Additional required wrapper -->
+               <div class="swiper-wrapper popular__wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide popular__slide">
+                     <div class="popular__card">
+                        <div class="popular__card--top">
+                           <picture>
+                              <source srcset="./images/categories/https-motoprox-com-v-shlema_picture_110_110.webp"
+                                 type="image/webp">
+                              <img src="./images/categories/https-motoprox-com-v-shlema_picture_110_110.png" alt="shlem"
+                                 width="110" height="110">
+                           </picture>
+                        </div>
+                        <div class="popular__card--title">
+                           <a href="#">Мотошлемы</a>
+                        </div>
+                        <ul class="popular__card--list">
+                           <li class="popular__card--item">
+                              <a class="popular__card--link" href="#">Интеграл (full face)</a>
+                           </li>
+                           <li class="popular__card--item">
+                              <a class="popular__card--link" href="#">Женский</a>
+                           </li>
+                           <li class="popular__card--item">
+                              <a class="popular__card--link" href="#">Кроссовый - ATV</a>
+                           </li>
+                           <li class="popular__card--item">
+                              <a class="popular__card--link" href="#">Мотард/Эндуро/Турестический</a>
+                           </li>
+                           <li class="popular__card--item">
+                              <a class="popular__card--link" href="#">Открытый</a>
+                           </li>
+                           <li class="popular__card--button">
+                              <a class="popular__card--link" href="#">Показать еще</a>
+                           </li>
+                        </ul>
+
+                     </div>
+                  </div>
+
+               </div>
+
+               <!-- If we need navigation buttons -->
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-button-next"></div>
+            </div>
+         </section>
+         <section class="banner">
+            <a class="banner__link" href="#" aria-label="banner link">
+               <div class="banner__title">ЦЕПИ D.I.D</div>
+               <div class="banner__more">
+                  <span class="banner__description">Оригинал</span>
+                  <span class="banner__button">
+                     Подробнее
+                     <svg class="banner__icon">
+                        <use href="./icons/sprite.svg#icon-arrow-button"></use>
+                     </svg>
+                  </span>
+               </div>
+            </a>
+         </section>
+         <section class="consumables">
+            <div class="section-title">
+               <h2>РАСХОДНИКИ И ЗАПЧАСТИ ДЛЯ МОТОЦИКЛОВ</h2>
+            </div>
+            <div class="swiper consumables__slider">
+               <!-- Additional required wrapper -->
+               <div class="swiper-wrapper consumables__wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide consumables__slide">
+                     <div class="consumables__card">
+                        <div class=consumables__card--top">
+                           <picture>
+                              <source srcset="./images/categories/m-marka-honda_preview_picture_110_110.webp"
+                                 type="image/webp">
+                              <img src="./images/categories/m-marka-honda_preview_picture_110_110.png" alt="Honda"
+                                 width="110" height="110">
+                           </picture>
+                        </div>
+                        <div class="consumables__card--title">
+                           <a href="#">Honda</a>
+                        </div>
+                        <ul class="consumables__card--list">
+                           <li class="consumables__card--item">
+                              <a class="consumables__card--link" href="#">CBR</a>
+                           </li>
+                           <li class="consumables__card--item">
+                              <a class="consumables__card--link" href="#">CB 400</a>
+                           </li>
+                           <li class="consumables__card--item">
+                              <a class="consumables__card--link" href="#">CB (Hornet)</a>
+                           </li>
+                           <li class="consumables__card--item">
+                              <a class="consumables__card--link" href="#">XL (Transalp)</a>
+                           </li>
+                           <li class="consumables__card--item">
+                              <a class="consumables__card--link" href="#">CR</a>
+                           </li>
+                           <li class="consumables__card--button">
+                              <a class="consumables__card--link" href="#">Показать еще</a>
+                           </li>
+                        </ul>
+
+                     </div>
+                  </div>
+
+               </div>
+
+               <!-- If we need navigation buttons -->
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-button-next"></div>
+            </div>
+         </section>
+         <section class="manufactures">
+            <div class="section-title">
+               <h2>Производители</h2>
+            </div>
+            <div class="manufactures__container">
+               <div class="manufactures__list">
+                  <div class="manufactures__item">
+                     <a class="manufactures__link" href="#">
+                        <picture>
+                           <source srcset="./images/manufactures/airoh_detail_400_200.webp" type="image/webp">
+                           <img src="./images/manufactures/airoh_detail_400_200.png" alt="Airoh" width="80" height="40">
+                        </picture>
+                     </a>
+                  </div>
+                  <div class="manufactures__item">
+                     <a class="manufactures__link" href="#">
+                        <picture>
+                           <source srcset="./images/manufactures/agv_detail_400_200.webp" type="image/webp">
+                           <img src="./images/manufactures/agv_detail_400_200.png" alt="agv" width="80" height="40">
+                        </picture>
+                     </a>
+                  </div>
+                  <div class="manufactures__item">
+                     <a class="manufactures__link" href="#">
+                        <picture>
+                           <source srcset="./images/manufactures/leatt_detail_400_200.webp" type="image/webp">
+                           <img src="./images/manufactures/leatt_detail_400_200.png" alt="leatt" width="80" height="40">
+                        </picture>
+                     </a>
+                  </div>
+                  <div class="manufactures__item">
+                     <a class="manufactures__link" href="#">
+                        <picture>
+                           <source srcset="./images/manufactures/shot-racing_detail_400_200.webp" type="image/webp">
+                           <img src="./images/manufactures/shot-racing_detail_400_200.png" alt="shot racing" width="80"
+                              height="40">
+                        </picture>
+                     </a>
+                  </div>
+                  <div class="manufactures__item">
+                     <a class="manufactures__link" href="#">
+                        <picture>
+                           <source srcset="./images/manufactures/revit_detail_400_200.webp" type="image/webp">
+                           <img src="./images/manufactures/revit_detail_400_200.png" alt="revit" width="80" height="40">
+                        </picture>
+                     </a>
+                  </div>
+                  <div class="manufactures__item">
+                     <a class="manufactures__link" href="#">
+                        <picture>
+                           <source srcset="./images/manufactures/prox_detail_400_200.webp" type="image/webp">
+                           <img src="./images/manufactures/prox_detail_400_200.png" alt="prox" width="80" height="40">
+                        </picture>
+                     </a>
+                  </div>
+               </div>
+               <a class="manufactures__more" href="#">Показать еще</a>
+            </div>
+         </section>
+         <section class="blog">
+            <div class="section-title">
+               <h2>Мотоблог</h2>
+            </div>
+            <div class="swiper blog__slider">
+               <!-- Additional required wrapper -->
+               <div class="swiper-wrapper blog__wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide blog__slide">
+                     <div class="blog__card">
+                        <a class="blog__card--link" href="#">
+                           <div class="blog__card--content">
+                              <div class="blog__card--title">
+                                 <span>Нужны ли права на кроссовый мотоцикл</span>
+                              </div>
+                              <div class="blog__card--description">
+                                 <span>
+                                    Планируете купить кроссовый мотоцикл? Необходимо изучить информацию, какие документы
+                                    нужны, и можно ли на нем ездить по дорогам общего пользования.
+                                 </span>
+                              </div>
+                              <div class="blog__card--button">
+                                 <span>Подробнее</span>
+                                 <svg class="blog__card--icon">
+                                    <use href="./icons/sprite.svg#icon-arrow-button"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="swiper-slide blog__slide">
+                     <div class="blog__card">
+                        <a class="blog__card--link" href="#">
+                           <div class="blog__card--content">
+                              <div class="blog__card--title">
+                                 <span>Нужны ли права на кроссовый мотоцикл</span>
+                              </div>
+                              <div class="blog__card--description">
+                                 <span>
+                                    Планируете купить кроссовый мотоцикл? Необходимо изучить информацию, какие документы
+                                    нужны, и можно ли на нем ездить по дорогам общего пользования.
+                                 </span>
+                              </div>
+                              <div class="blog__card--button">
+                                 <span>Подробнее</span>
+                                 <svg class="blog__card--icon">
+                                    <use href="./icons/sprite.svg#icon-arrow-button"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="swiper-pagination"></div>
+               <!-- If we need navigation buttons -->
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-button-next"></div>
+            </div>
+         </section>
+         <section class="subscribe">
+            <div class="subscribe__container">
+               <div class="subscribe__title">Получать Новости Сайта</div>
+               <form class="subscribe__form" action="/m/" method="post">
+                  <input class="subscribe__input" placeholder="Введите Ваш Email" type="text" name="EMAIL">
+                  <button class="subscribe__button" type="submit" aria-label="subscribe submit">Подписаться</button>
+               </form>
+            </div>
+         </section>
+         <section class="photogalery">
+            <div class="section-title">
+               <h2>Фото магазина</h2>
+            </div>
+            <div class="photogalery__container">
+               <div class="swiper photogalery__slider">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper photogalery__wrapper">
+                     <!-- Slides -->
+                     <div class="swiper-slide photogalery__slide">
+                        <a data-fancybox="gallery" href="/images/photogalery/56c72aac76fdaa9c59afcdb471fb5bfc (1).jpg">
+                           <picture>
+                              <source srcset="./images/photogalery/dlya-slaydera-na-glavnoy_more_photo_550_550 (1).webp"
+                                 type="image/webp">
+                              <img src="./images/photogalery/dlya-slaydera-na-glavnoy_more_photo_550_550 (1).jpg"
+                                 alt="oxford" width="550" height="550">
+                           </picture>
+                        </a>
+                     </div>
+                     <div class="swiper-slide photogalery__slide">
+                        <a data-fancybox="gallery" href="/images/photogalery/68ba1e71046c0e7e5324422a4a6eae4a (1).jpg">
+                           <picture>
+                              <source
+                                 srcset="./images/photogalery/dlya-slaydera-na-glavnoy_more_photo_550_550_1 (1).webp"
+                                 type="image/webp">
+                              <img src="./images/photogalery/dlya-slaydera-na-glavnoy_more_photo_550_550_1 (1).jpg"
+                                 alt="oxford" width="550" height="550">
+                           </picture>
+                        </a>
+                     </div>
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+               </div>
+            </div>
+         </section>
+         <section class="faq" itemscope itemtype="https://schema.org/FAQPage">
+            <div class="section-title">
+               <h2>Вопросы и ответы</h2>
+            </div>
+            <div class="faq__container">
+               <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="faq__question" itemprop="name">
+                     <p> Какие условия доставки мотозапчастей и мотоэкипировки?</p>
+                     <svg class="faq__question--icon">
+                        <use href="./icons/sprite.svg#icon-arrow"></use>
+                     </svg>
+                  </div>
+                  <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                     <p itemprop="text">Мы осуществляем доставку во все города Украины согласно тарифам Новой Почты.</p>
+                  </div>
+               </div>
+               <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="faq__question" itemprop="name">
+                     <p>Какие условия гарантии на мото товары?</p>
+                     <svg class="faq__question--icon">
+                        <use href="./icons/sprite.svg#icon-arrow"></use>
+                     </svg>
+                  </div>
+                  <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                     <p itemprop="text">Мы предоставляем гарантийное обеспечение на мото товары. Вернуть либо поменять
+                        товар можно в течение 14 календарных дней со дня получения заказа.</p>
+                  </div>
+               </div>
+               <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="faq__question" itemprop="name">
+                     <p>Есть ли возможность купить в кредит?</p>
+                     <svg class="faq__question--icon">
+                        <use href="./icons/sprite.svg#icon-arrow"></use>
+                     </svg>
+                  </div>
+                  <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                     <p itemprop="text">
+                        На данный момент мы не предоставляем мото товары в кредит. Данная услуга будет доступна через
+                        несколько месяцев.
+                     </p>
+                  </div>
+               </div>
+               <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="faq__question" itemprop="name">
+                     <p>В каком городе находится мотомагазин?</p>
+                     <svg class="faq__question--icon">
+                        <use href="./icons/sprite.svg#icon-arrow"></use>
+                     </svg>
+                  </div>
+                  <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                     <p itemprop="text">
+                        Мотомагазин MotoTusa находится в Киеве.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="map">
+
+         </section>
+         <section class="seo-text">
+            <div class="section-title">
+               <h2>Интернет‑магазин запчастей для мотоциклов</h2>
+            </div>
+            <div class="seo-text__container">
+               <p>
+                  <strong>MotoTusa</strong>
+                  – удобный и
+                  <strong>недорогой интернет магазин мототоваров:</strong>
+               </p>
+               <ul>
+                  <li>экипировки;</li>
+                  <li>запчастей;</li>
+                  <li>расходных материалов;</li>
+                  <li>аксессуаров и тд.</li>
+               </ul>
+               <p>
+                  Мы гарантируем высокое качество предлагаемой продукции, грамотную консультационную поддержку и
+                  оперативную доставку приобретенной продукции.
+               </p>
+               <span class="seo-text__subtitle">Все для квалифицированного ремонта мотоциклов</span>
+               <p>
+                  Получить удовольствие можно от поездки только на технически исправном мотоцикле. Своевременное
+                  обслуживание и плановый ремонт необходимо выполнять с использованием качественных запасных частей и
+                  расходных материалов. Предлагаем заказать мотозапчасти через интернет-магазин Motoprox: вся наша
+                  продукция соответствует самым строгим техническим требованиям, ведь в ассортименте только
+                  оригинальные детали и комплектующие.
+               </p>
+            </div>
+            <div class="seo-text__button">Подробнее</div>
+
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__first">
+               <a class="footer__logo" href="/" aria-label="logo">
+                  <img class="footer__logo--image" src="./images/logo.png" alt="MotoTusa" width="48" height="48">
+               </a>
+               <div class="footer__social">
+                  <a class="footer__social--link" href="https://www.facebook.com/" target="_blank" rel="nofolow"
+                     aria-label="facebook">
+                     <svg class="footer__social--icon">
+                        <use href="./icons/sprite.svg#icon-facebook"></use>
+                     </svg>
+                  </a>
+                  <a class="footer__social--link" href="https://www.youtube.com/" target="_blank" rel="nofolow"
+                     aria-label="youtube">
+                     <svg class="footer__social--icon">
+                        <use href="./icons/sprite.svg#icon-youtube"></use>
+                     </svg>
+                  </a>
+                  <a class="footer__social--link" href="https://www.instagram.com/" target="_blank" rel="nofolow"
+                     aria-label="instagram">
+                     <svg class="footer__social--icon">
+                        <use href="./icons/sprite.svg#icon-instagram"></use>
+                     </svg>
+                  </a>
+               </div>
+            </div>
+            <div class="footer__two">
+               <div class="footer__menu">
+                  <div class="footer__menu--button">
+                     <span class="footer__menu--title">МЕНЮ</span>
+                     <svg class="footer__menu--icon">
+                        <use href="./icons/sprite.svg#icon-arrow"></use>
+                     </svg>
+                  </div>
+                  <ul class="footer__menu--list">
+                     <li class="footer__menu--item">
+                        <a class="footer__menu--link" href="#">Оформить заказ</a>
+                     </li>
+                     <li class="footer__menu--item">
+                        <a class="footer__menu--link" href="#">Оплата</a>
+                     </li>
+                     <li class="footer__menu--item">
+                        <a class="footer__menu--link" href="#">Доставка</a>
+                     </li>
+                     <li class="footer__menu--item">
+                        <a class="footer__menu--link" href="#">Возврат и гарантия</a>
+                     </li>
+                     <li class="footer__menu--item">
+                        <a class="footer__menu--link" href="#">Кредитование</a>
+                     </li>
+                     <li class="footer__menu--item">
+                        <a class="footer__menu--link" href="#">Вопрос-ответ</a>
+                     </li>
+                     <li class="footer__menu--item">
+                        <a class="footer__menu--link" href="#">Политика конфиденциальности</a>
+                     </li>
+                     <li class="footer__menu--item">
+                        <a class="footer__menu--link" href="#">Договор публичной оферты</a>
+                     </li>
+                     <li class="footer__menu--item">
+                        <a class="footer__menu--link" href="#">Вакансии</a>
+                     </li>
+                     <li class="footer__menu--item">
+                        <a class="footer__menu--link" href="#">Дилерам</a>
+                     </li>
+                     <li class="footer__menu--item">
+                        <a class="footer__menu--link" href="#">Мотоблог</a>
+                     </li>
+                     <li class="footer__menu--item">
+                        <a class="footer__menu--link" href="#">Популярные категории</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer__three">
+               <div class="footer__contacts">
+                  <div class="footer__contacts--item">
+                     <svg class="footer__contacts--icon">
+                        <use href="./icons/sprite.svg#icon-phone"></use>
+                     </svg>
+                     <a class="footer__contacts--link" href="tel:+380679843127">+38 (067) 984-31-27</a>
+                     <a class="footer__contacts--link" href="tel:+380689843127">+38 (068) 938-73-78</a>
+                  </div>
+                  <div class="footer__contacts--item">
+                     <svg class="footer__contacts--icon">
+                        <use href="./icons/sprite.svg#icon-pin"></use>
+                     </svg>
+                     <a class="footer__contacts--link"
+                        href="https://www.google.com.ua/maps/place/MotoTusa/@50.4891148,30.4708218,18.1z/data=!4m18!1m12!4m11!1m3!2m2!1d30.5335299!2d50.4819119!1m6!1m2!1s0x40d4cdeda77cb197:0x822432d69d6c66b0!2z0L_RgC3Rgi4g0KHRgtC10L_QsNC90LAg0JHQsNC90LTQtdGA0YssIDUsINCa0LjQtdCyLCAwMjAwMA!2m2!1d30.471868!2d50.4892857!3m4!1s0x40d4cf758bc0559f:0xca539758972b4464!8m2!3d50.4892563!4d30.4719473?hl=ru"
+                        target="_blank" rel="noopener noreferrer">
+                        Київ. пр-т. Степана Бандери, 5
+                     </a>
+                  </div>
+                  <div class="footer__contacts--item">
+                     <svg class="footer__contacts--icon">
+                        <use href="./icons/sprite.svg#icon-clock"></use>
+                     </svg>
+                     <p class="footer__contacts--link">
+                        пн-пт: 09:00 - 19:00
+                     </p>
+                     <p class="footer__contacts--link">
+                        сб-вс: Выходной
+                     </p>
+                  </div>
+                  <div class="footer__contacts--item">
+                     <svg class="footer__contacts--icon">
+                        <use href="./icons/sprite.svg#icon-envelope"></use>
+                     </svg>
+                     <a class="footer__contacts--link" href="mailto:info@mototusa.com">info@mototusa.com</a>
+                  </div>
+               </div>
+               <div class="footer__payment"></div>
+            </div>
+         </div>
+         <div class="footer__copy">
+            <span>2022</span>
+            <span>правила дороги устанавливаешь ты</span>
+         </div>
+      </footer>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+   <script defer src="./js/faq.js" async></script>
+   <script defer src="./js/sliders.js" async></script>
+
+</body>
+
+</html>

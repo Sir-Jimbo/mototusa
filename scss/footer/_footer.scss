@@ -1,0 +1,142 @@
+.footer {
+   background: $background-color-footer;
+   width: 100%;
+   overflow: hidden;
+
+   &__container {
+      padding: 30px 10px;
+      border-top: 2px solid $color-border-footer;
+      border-bottom: 2px solid $color-border-footer;
+   }
+
+   &__first {
+      padding-bottom: 30px;
+      border-bottom: 1px solid $color-border-footer-block;
+   }
+
+   &__logo {
+      display: block;
+      max-width: 48px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+
+      &--image {
+         max-width: 48px;
+      }
+   }
+
+   &__social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &--link {
+         display: block;
+         fill: $color-text-link;
+         &:not(:last-child) {
+            margin-right: 15px;
+         }
+         &:hover,
+         &:focus {
+            fill: $color-theme;
+         }
+      }
+
+      &--icon {
+         width: 25px;
+         height: 25px;
+      }
+   }
+
+   &__two {
+      padding: 15px 0;
+      border-bottom: 1px solid $color-border-footer-block;
+   }
+
+   &__menu {
+      &--button {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+      &--title {
+         color: $color-text-link;
+         font-size: 18px;
+         font-weight: 600;
+         text-transform: uppercase;
+      }
+
+      &--icon {
+         height: 11px;
+         width: 20px;
+         fill: $color-text-link;
+         margin-left: 15px;
+      }
+
+      &--list {
+         list-style: none;
+         margin: 0;
+         padding: 20px 15px;
+         font-weight: 600;
+         font-size: 16px;
+      }
+
+      &--item {
+         &:not(:last-child) {
+            margin-bottom: 20px;
+         }
+      }
+
+      &--link {
+         display: inline-block;
+         font-size: 15px;
+         font-weight: 600;
+         color: $color-text-link;
+      }
+   }
+
+   &__three {
+   }
+
+   &__contacts {
+      padding: 30px 0;
+
+      &--item {
+         position: relative;
+         padding-left: 30px;
+         font-weight: 600;
+         font-size: 15px;
+
+         &:not(:last-child) {
+            margin-bottom: 15px;
+         }
+      }
+
+      &--icon {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 18px;
+         height: 18px;
+         fill: $color-border-footer-block;
+      }
+
+      &--link {
+         display: inline-block;
+         color: $color-text-link;
+         &:not(:last-child) {
+            margin-bottom: 10px;
+         }
+      }
+   }
+
+   &__copy {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      color: $color-text-link;
+   }
+}

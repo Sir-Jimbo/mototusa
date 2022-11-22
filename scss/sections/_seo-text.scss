@@ -1,0 +1,71 @@
+.seo-text {
+   padding-bottom: 60px;
+
+   &__container {
+      margin-bottom: 25px;
+   }
+
+   p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: $color-text-main;
+   }
+
+   ul {
+      list-style: none;
+      padding: 20px 0;
+   }
+
+   li {
+      position: relative;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: $color-text-main;
+      padding-left: 20px;
+      &::before {
+         content: "";
+         width: 10px;
+         height: 10px;
+         display: inline-block;
+         background: $color-theme;
+         border-radius: 50%;
+         position: absolute;
+         left: 0;
+         top: 0;
+         bottom: 0;
+         right: auto;
+         margin: auto;
+      }
+
+      &:not(:last-child) {
+         margin-bottom: 10px;
+      }
+   }
+
+   &__subtitle {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 600;
+      margin: 20px 0;
+      line-height: 25px;
+      text-transform: uppercase;
+      margin: 20px 0;
+      color: $color-text-main;
+   }
+
+   &__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      width: 160px;
+      padding: 12px 5px;
+      background: $background-color-main;
+      border: 2px solid $color-theme;
+      color: $color-text-main;
+      text-align: center;
+      cursor: pointer;
+   }
+}
