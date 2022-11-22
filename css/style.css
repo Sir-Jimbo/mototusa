@@ -654,7 +654,7 @@ section {
 
 .sale__card--rating {
   overflow: hidden;
-  background: url(/icons/stars.png) no-repeat;
+  background: url(../icons/stars.png) no-repeat;
   width: 90px;
   height: 15px;
 }
@@ -871,8 +871,8 @@ section {
   display: block;
   padding: 25px 10px;
   text-align: center;
-  background-image: url(/images/cepi.jpg);
-  background-image: url(/images/cepi.webp);
+  background-image: url(../images/cepi.jpg);
+  background-image: url(../images/cepi.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1082,8 +1082,8 @@ section {
 
 .blog__card--link {
   display: block;
-  background: url(/images/blog/nuzhny-li-prava-na-krossovyy-mototsikl_preview_picture_568_435.jpg);
-  background: url(/images/blog/nuzhny-li-prava-na-krossovyy-mototsikl_preview_picture_568_435.webp);
+  background: url(../images/blog/nuzhny-li-prava-na-krossovyy-mototsikl_preview_picture_568_435.jpg);
+  background: url(../images/blog/nuzhny-li-prava-na-krossovyy-mototsikl_preview_picture_568_435.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1147,8 +1147,8 @@ section {
 .subscribe__container {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-image: url(/images/wi-sub-bg.jpg);
-  background-image: url(/images/wi-sub-bg.webp);
+  background-image: url(../images/wi-sub-bg.jpg);
+  background-image: url(../images/wi-sub-bg.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
