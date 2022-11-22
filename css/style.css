@@ -325,17 +325,20 @@ section {
 }
 
 .hero .first {
-  background-image: url(/images/banner-1.jpg);
+  background-image: url(../images/banner-1.jpg);
+  background-image: url(../images/banner-1.webp);
 }
 
 .hero .two {
   position: relative;
-  background-image: url(/images/banner-1.jpg);
+  background-image: url(../images/banner-1.jpg);
+  background-image: url(../images/banner-1.webp);
 }
 
 .hero .three {
   position: relative;
-  background-image: url(/images/banner-2.jpg);
+  background-image: url(../images/banner-2.jpg);
+  background-image: url(../images/banner-2.webp);
 }
 
 .hero .banner-link {
