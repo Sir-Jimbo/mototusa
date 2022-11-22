@@ -3,7 +3,7 @@ const sale = new Swiper('.sale__slider', {
    slidesPerView: 1.325,
    spaceBetween: 10,
    centeredSlides: true,
-   loop: true,
+   //loop: true,
 
    // Navigation arrows
    navigation: {
@@ -19,7 +19,7 @@ const popular = new Swiper('.popular__slider', {
    slidesPerView: 1.325,
    spaceBetween: 10,
    centeredSlides: true,
-   loop: true,
+   //loop: true,
 
    // Navigation arrows
    navigation: {
@@ -35,7 +35,7 @@ const consumables = new Swiper('.consumables__slider', {
    slidesPerView: 1.325,
    spaceBetween: 10,
    centeredSlides: true,
-   loop: true,
+   //loop: true,
 
    // Navigation arrows
    navigation: {
@@ -50,7 +50,7 @@ const blog = new Swiper('.blog__slider', {
    // Optional parameters
    spaceBetween: 10,
    centeredSlides: true,
-   loop: true,
+   //loop: true,
 
    pagination: {
       el: '.swiper-pagination',
@@ -69,7 +69,7 @@ const photogalery = new Swiper('.photogalery__slider', {
    // Optional parameters
    spaceBetween: 10,
    centeredSlides: true,
-   loop: true,
+   //loop: true,
 
    pagination: {
       el: '.swiper-pagination',
