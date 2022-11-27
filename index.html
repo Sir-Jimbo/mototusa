@@ -1456,6 +1456,10 @@
                                  alt="oxford" width="550" height="550">
                            </picture>
                         </a>
+                        <div class="photogalery__corner lt"></div>
+                        <div class="photogalery__corner rt"></div>
+                        <div class="photogalery__corner rb"></div>
+                        <div class="photogalery__corner lb"></div>
                      </div>
                      <div class="swiper-slide photogalery__slide">
                         <a data-fancybox="gallery" href="/images/photogalery/68ba1e71046c0e7e5324422a4a6eae4a (1).jpg">
@@ -1467,69 +1471,85 @@
                                  alt="oxford" width="550" height="550">
                            </picture>
                         </a>
+                        <div class="photogalery__corner lt"></div>
+                        <div class="photogalery__corner rt"></div>
+                        <div class="photogalery__corner rb"></div>
+                        <div class="photogalery__corner lb"></div>
                      </div>
                   </div>
 
-                  <div class="swiper-pagination"></div>
+                  <div class="swiper-pagination photogalery__pagination"></div>
                   <!-- If we need navigation buttons -->
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev photogalery__button--prev">
+                     <svg class="photogalery__icon--arrow">
+                        <use href="./icons/sprite.svg#icon-arrow-button"></use>
+                     </svg>
+                  </div>
+                  <div class="swiper-button-next photogalery__button--next">
+                     <svg class="photogalery__icon--arrow">
+                        <use href="./icons/sprite.svg#icon-arrow-button"></use>
+                     </svg>
+                  </div>
                </div>
             </div>
          </section>
          <section class="faq" itemscope itemtype="https://schema.org/FAQPage">
-            <div class="section-title">
-               <h2>Вопросы и ответы</h2>
-            </div>
             <div class="faq__container">
-               <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                  <div class="faq__question" itemprop="name">
-                     <p> Какие условия доставки мотозапчастей и мотоэкипировки?</p>
-                     <svg class="faq__question--icon">
-                        <use href="./icons/sprite.svg#icon-arrow"></use>
-                     </svg>
-                  </div>
-                  <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                     <p itemprop="text">Мы осуществляем доставку во все города Украины согласно тарифам Новой Почты.</p>
-                  </div>
+               <div class="section-title">
+                  <h2>Вопросы и ответы</h2>
                </div>
-               <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                  <div class="faq__question" itemprop="name">
-                     <p>Какие условия гарантии на мото товары?</p>
-                     <svg class="faq__question--icon">
-                        <use href="./icons/sprite.svg#icon-arrow"></use>
-                     </svg>
+               <div class="faq__list">
+                  <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                     <div class="faq__question" itemprop="name">
+                        <p> Какие условия доставки мотозапчастей и мотоэкипировки?</p>
+                        <svg class="faq__question--icon">
+                           <use href="./icons/sprite.svg#icon-arrow"></use>
+                        </svg>
+                     </div>
+                     <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">Мы осуществляем доставку во все города Украины согласно тарифам Новой Почты.
+                        </p>
+                     </div>
                   </div>
-                  <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                     <p itemprop="text">Мы предоставляем гарантийное обеспечение на мото товары. Вернуть либо поменять
-                        товар можно в течение 14 календарных дней со дня получения заказа.</p>
+                  <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                     <div class="faq__question" itemprop="name">
+                        <p>Какие условия гарантии на мото товары?</p>
+                        <svg class="faq__question--icon">
+                           <use href="./icons/sprite.svg#icon-arrow"></use>
+                        </svg>
+                     </div>
+                     <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">Мы предоставляем гарантийное обеспечение на мото товары. Вернуть либо
+                           поменять
+                           товар можно в течение 14 календарных дней со дня получения заказа.</p>
+                     </div>
                   </div>
-               </div>
-               <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                  <div class="faq__question" itemprop="name">
-                     <p>Есть ли возможность купить в кредит?</p>
-                     <svg class="faq__question--icon">
-                        <use href="./icons/sprite.svg#icon-arrow"></use>
-                     </svg>
+                  <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                     <div class="faq__question" itemprop="name">
+                        <p>Есть ли возможность купить в кредит?</p>
+                        <svg class="faq__question--icon">
+                           <use href="./icons/sprite.svg#icon-arrow"></use>
+                        </svg>
+                     </div>
+                     <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">
+                           На данный момент мы не предоставляем мото товары в кредит. Данная услуга будет доступна через
+                           несколько месяцев.
+                        </p>
+                     </div>
                   </div>
-                  <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                     <p itemprop="text">
-                        На данный момент мы не предоставляем мото товары в кредит. Данная услуга будет доступна через
-                        несколько месяцев.
-                     </p>
-                  </div>
-               </div>
-               <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                  <div class="faq__question" itemprop="name">
-                     <p>В каком городе находится мотомагазин?</p>
-                     <svg class="faq__question--icon">
-                        <use href="./icons/sprite.svg#icon-arrow"></use>
-                     </svg>
-                  </div>
-                  <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                     <p itemprop="text">
-                        Мотомагазин MotoTusa находится в Киеве.
-                     </p>
+                  <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                     <div class="faq__question" itemprop="name">
+                        <p>В каком городе находится мотомагазин?</p>
+                        <svg class="faq__question--icon">
+                           <use href="./icons/sprite.svg#icon-arrow"></use>
+                        </svg>
+                     </div>
+                     <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">
+                           Мотомагазин MotoTusa находится в Киеве.
+                        </p>
+                     </div>
                   </div>
                </div>
             </div>
@@ -1538,10 +1558,14 @@
 
          </section>
          <section class="seo-text">
+
             <div class="section-title">
                <h2>Интернет‑магазин запчастей для мотоциклов</h2>
             </div>
             <div class="seo-text__container">
+               <div class="seo-text__image">
+                  <img loading="lazy" src="./images/about-im.jpg" alt="">
+               </div>
                <p>
                   <strong>MotoTusa</strong>
                   – удобный и
@@ -1624,6 +1648,8 @@
                      <li class="footer__menu--item">
                         <a class="footer__menu--link" href="#">Вопрос-ответ</a>
                      </li>
+                  </ul>
+                  <ul class="footer__menu--list">
                      <li class="footer__menu--item">
                         <a class="footer__menu--link" href="#">Политика конфиденциальности</a>
                      </li>
@@ -1687,7 +1713,7 @@
          </div>
          <div class="footer__copy">
             <span>2022</span>
-            <span>правила дороги устанавливаешь ты</span>
+            <span>правила дороги устанавливаешь ты!</span>
          </div>
       </footer>
    </div>

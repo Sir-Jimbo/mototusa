@@ -5,11 +5,27 @@
       margin-bottom: 25px;
    }
 
+   &__image {
+      display: none;
+      width: 50%;
+      float: right;
+      text-align: center;
+      padding-left: 50px;
+      @media screen and(min-width: 1024px) {
+         display: block;
+      }
+   }
+
    p {
       font-size: 14px;
       font-weight: 400;
       line-height: 20px;
       color: $color-text-main;
+      @media screen and(min-width: 1024px) {
+         font-size: 16px;
+         font-weight: 600;
+         line-height: 25px;
+      }
    }
 
    ul {
@@ -42,6 +58,12 @@
       &:not(:last-child) {
          margin-bottom: 10px;
       }
+
+      @media screen and(min-width: 1024px) {
+         font-size: 16px;
+         font-weight: 600;
+         line-height: 25px;
+      }
    }
 
    &__subtitle {
@@ -53,6 +75,11 @@
       text-transform: uppercase;
       margin: 20px 0;
       color: $color-text-main;
+
+      @media screen and(min-width: 1024px) {
+         font-size: 24px;
+         line-height: 35px;
+      }
    }
 
    &__button {
@@ -67,5 +94,10 @@
       color: $color-text-main;
       text-align: center;
       cursor: pointer;
+
+      &:hover {
+         background: $color-theme;
+         color: $background-color-main;
+      }
    }
 }

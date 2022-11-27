@@ -134,9 +134,21 @@ const blog = new Swiper('.blog__slider', {
 
 const photogalery = new Swiper('.photogalery__slider', {
    // Optional parameters
-   spaceBetween: 10,
-   centeredSlides: true,
+   //spaceBetween: 15,
    loop: true,
+   watchOverflow: true,
+   breakpoints: {
+      568: {
+         slidesPerView: 2,
+      },
+      1024: {
+         slidesPerView: 4,
+      },
+      1440: {
+         slidesPerView: 5,
+         //spaceBetween: 25,
+      },
+   },
 
    pagination: {
       el: '.swiper-pagination',

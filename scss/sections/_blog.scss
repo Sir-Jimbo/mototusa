@@ -64,6 +64,7 @@
          cursor: pointer;
 
          &:hover {
+            transition: all 0.3s;
             color: $color-theme;
             border-bottom: 2px solid $color-theme;
 

@@ -1,4 +1,16 @@
 .faq {
+   &__container {
+      @media screen and(min-width: 1024px) {
+         background: url(../images/baike.png) 0 0 no-repeat;
+         background-position-y: calc(100% + 50px);
+      }
+   }
+
+   &__list {
+      max-width: 1110px;
+      margin: 0 auto;
+   }
+
    &__item {
       &:not(:last-child) {
          margin-bottom: 10px;
@@ -7,13 +19,17 @@
    &__question {
       position: relative;
       cursor: pointer;
-      padding: 9px 45px 9px 11px;
+      padding: 10px 45px 10px 10px;
       background: $background-color-faq;
       border: 1px solid $color-border-faq;
       font-weight: 600;
       font-size: 18px;
       line-height: 22px;
       color: $color-text-link;
+
+      @media screen and(min-width: 1024px) {
+         padding: 20px 35px;
+      }
 
       &--icon {
          position: absolute;

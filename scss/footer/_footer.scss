@@ -2,16 +2,27 @@
    background: $background-color-footer;
    width: 100%;
    overflow: hidden;
+   border-top: 2px solid $color-border-footer;
 
    &__container {
       padding: 30px 10px;
-      border-top: 2px solid $color-border-footer;
+
       border-bottom: 2px solid $color-border-footer;
+      @media screen and(min-width: 1024px) {
+         display: flex;
+         justify-content: space-between;
+         padding: 20px 10px 25px;
+      }
    }
 
    &__first {
       padding-bottom: 30px;
       border-bottom: 1px solid $color-border-footer-block;
+      @media screen and(min-width: 1024px) {
+         padding: 0;
+         border: none;
+         width: 200px;
+      }
    }
 
    &__logo {
@@ -51,13 +62,26 @@
    &__two {
       padding: 15px 0;
       border-bottom: 1px solid $color-border-footer-block;
+      @media screen and(min-width: 1024px) {
+         padding: 0;
+         border: none;
+         max-width: 730px;
+         width: calc(100% - 530px);
+      }
    }
 
    &__menu {
+      @media screen and(min-width: 1024px) {
+         display: flex;
+         justify-content: space-between;
+      }
       &--button {
          display: flex;
          align-items: center;
          justify-content: center;
+         @media screen and(min-width: 1024px) {
+            display: none;
+         }
       }
       &--title {
          color: $color-text-link;
@@ -76,14 +100,20 @@
       &--list {
          list-style: none;
          margin: 0;
-         padding: 20px 15px;
+         padding: 20px 15px 0;
          font-weight: 600;
          font-size: 16px;
+         @media screen and(min-width: 1024px) {
+            padding: 0;
+         }
       }
 
       &--item {
          &:not(:last-child) {
             margin-bottom: 20px;
+            @media screen and(min-width: 1024px) {
+               margin-bottom: 30px;
+            }
          }
       }
 
@@ -92,14 +122,24 @@
          font-size: 15px;
          font-weight: 600;
          color: $color-text-link;
+
+         &:hover {
+            color: $color-theme;
+         }
       }
    }
 
    &__three {
+      @media screen and(min-width: 1024px) {
+         width: 300px;
+      }
    }
 
    &__contacts {
       padding: 30px 0;
+      @media screen and(min-width: 1024px) {
+         padding: 0;
+      }
 
       &--item {
          position: relative;
@@ -124,8 +164,13 @@
       &--link {
          display: inline-block;
          color: $color-text-link;
+
          &:not(:last-child) {
             margin-bottom: 10px;
+         }
+
+         &:hover {
+            color: $color-theme;
          }
       }
    }
@@ -138,5 +183,18 @@
       font-weight: 600;
       text-align: center;
       color: $color-text-link;
+      @media screen and(min-width: 1024px) {
+         flex-direction: row;
+         justify-content: center;
+         font-size: 16px;
+         letter-spacing: 1px;
+         font-weight: 500;
+      }
+
+      span {
+         &:nth-child(1) {
+            margin-right: 5px;
+         }
+      }
    }
 }
