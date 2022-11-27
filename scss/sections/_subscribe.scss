@@ -1,13 +1,31 @@
 .subscribe {
-   &__container {
-      padding-top: 20px;
-      padding-bottom: 20px;
+   &__wrap {
       background-image: url(../images/wi-sub-bg.jpg);
       background-image: url(../images/wi-sub-bg.webp);
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
+   }
+   &__container {
+      padding-top: 20px;
+      padding-bottom: 20px;
+
       text-align: center;
+      @media screen and(min-width: 1024px) {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         height: 130px;
+      }
+   }
+
+   &__form {
+      @media screen and(min-width: 1024px) {
+         display: flex;
+         align-items: center;
+         width: 58.5%;
+         max-width: 800px;
+      }
    }
 
    &__title {
@@ -15,6 +33,11 @@
       font-weight: 600;
       line-height: 40px;
       color: $background-color-main;
+      @media screen and(min-width: 1024px) {
+         font-size: 35px;
+         line-height: 1;
+         font-weight: 700;
+      }
    }
 
    &__input {
@@ -25,6 +48,11 @@
       padding: 0 20px;
       font-size: 14px;
       margin: 20px 0;
+      @media screen and(min-width: 1024px) {
+         width: calc(100% - 165px);
+         height: 40px;
+         margin: 0 10px 0 30px;
+      }
    }
 
    &__button {
@@ -35,7 +63,11 @@
       border-radius: 4px;
       font-size: 14px;
       font-weight: 700;
-      color: $color-text;
+      color: $background-color-main;
       background: $color-theme;
+      @media screen and(min-width: 1024px) {
+         height: 40px;
+         width: 165px;
+      }
    }
 }

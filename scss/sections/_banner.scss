@@ -2,7 +2,7 @@
    &__link {
       position: relative;
       display: block;
-      padding: 25px 10px;
+      padding: 25px 0;
       text-align: center;
 
       background-image: url(../images/cepi.jpg);
@@ -21,6 +21,17 @@
          width: 100%;
          height: 100%;
       }
+
+      @media screen and(min-width: 1024px) {
+         padding: 60px 0;
+      }
+   }
+
+   &__container {
+      @media screen and(min-width: 1024px) {
+         text-align: left;
+         padding-left: 250px;
+      }
    }
 
    &__title {
@@ -32,7 +43,13 @@
       font-weight: 700;
       padding: 4px 25px;
       clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%);
+      opacity: 0.9;
       margin-bottom: 10px;
+      @media screen and(min-width: 1024px) {
+         margin-left: 60px;
+         font-size: 70px;
+         padding: 0 50px;
+      }
    }
 
    &__more {
@@ -42,16 +59,24 @@
       align-items: center;
       color: $background-color-main;
       font-size: 18px;
-      letter-spacing: -0.06px;
-      display: flex;
       font-weight: 400;
       z-index: 1;
+      @media screen and(min-width: 1024px) {
+         justify-content: flex-start;
+         align-items: flex-start;
+         margin-left: 25px;
+      }
    }
 
    &__description {
       line-height: 28px;
       margin-bottom: 20px;
       z-index: inherit;
+      @media screen and(min-width: 1024px) {
+         font-size: 28px;
+         line-height: 40px;
+         margin-left: 15px;
+      }
    }
 
    &__button {
@@ -60,11 +85,17 @@
       z-index: inherit;
       border-bottom: 2.5px solid $color-theme;
       padding-bottom: 2.5px;
+      @media screen and(min-width: 1024px) {
+         font-size: 15px;
+         line-height: 18px;
+         padding-bottom: 3px;
+      }
    }
 
    &__icon {
       margin-left: 5px;
       width: 15px;
       height: 8px;
+      fill: $background-color-main;
    }
 }

@@ -1,37 +1,54 @@
 .blog {
+   max-width: 1860px;
+   margin: 0 auto;
    &__card {
       &--link {
          display: block;
-         background: url(../images/blog/nuzhny-li-prava-na-krossovyy-mototsikl_preview_picture_568_435.jpg);
-         background: url(../images/blog/nuzhny-li-prava-na-krossovyy-mototsikl_preview_picture_568_435.webp);
+         background: url(../images/blog/bl-1.jpg);
+         //background: url(../images/blog/bl-1_1.webp);
          background-position: center center;
          background-repeat: no-repeat;
          background-size: cover;
+         height: 610px;
       }
 
       &--content {
          display: flex;
          flex-direction: column;
          height: 100%;
-         padding: 25px;
+         padding: 50px 25px 100px;
          background: $background-color-blog;
          transition: opacity 0.3s;
          color: $background-color-main;
          z-index: 1;
+         @media screen and(min-width: 1024px) {
+            opacity: 0;
+            padding: 50px 50px 100px 50px;
+         }
+      }
+
+      &:hover &--content {
+         opacity: 1;
       }
 
       &--title {
-         font-size: 26px;
+         font-size: 28px;
          font-weight: 700;
          line-height: 1;
-         margin-bottom: 20px;
+         margin-bottom: 60px;
+         @media screen and(min-width: 1024px) {
+            font-size: 40px;
+         }
       }
 
       &--description {
-         font-size: 14px;
+         font-size: 16px;
          font-weight: 600;
          line-height: 25px;
          margin-bottom: 20px;
+         @media screen and(min-width: 1024px) {
+            font-size: 18px;
+         }
       }
 
       &--button {
@@ -45,12 +62,22 @@
          border-bottom: 2px solid $background-color-main;
          color: $background-color-main;
          cursor: pointer;
+
+         &:hover {
+            color: $color-theme;
+            border-bottom: 2px solid $color-theme;
+
+            .blog__card--icon {
+               fill: $color-theme;
+            }
+         }
       }
 
       &--icon {
          width: 16px;
          height: 8px;
          margin-left: 5px;
+         fill: $background-color-main;
       }
    }
 }

@@ -36,12 +36,17 @@ body {
    width: 100%;
    padding: 0 10px;
    margin: 0 auto;
+   max-width: 1860px;
+   /*
    @media screen and(min-width: 429px) {
+      max-width: 720px;
    }
    @media screen and(min-width: 769px) {
+      max-width: 960px;
    }
    @media screen and(min-width: 1025px) {
-   }
+      
+   }*/
 }
 
 img {
@@ -70,6 +75,9 @@ h2 {
 
 section {
    padding-top: 60px;
+   @media screen and(min-width: 1024px) {
+      padding-top: 75px;
+   }
 }
 
 .section-title {
@@ -79,6 +87,11 @@ section {
    justify-content: center;
    margin-bottom: 25px;
    text-align: center;
+
+   @media screen and(min-width: 1024px) {
+      margin-bottom: 95px;
+   }
+
    &::before {
       position: relative;
       display: inline-block;
@@ -89,6 +102,9 @@ section {
       background: $color-theme;
       transform: rotate(8deg);
       vertical-align: middle;
+      @media screen and(min-width: 768px) {
+         margin-right: 20px;
+      }
    }
    &::after {
       position: relative;
@@ -100,17 +116,33 @@ section {
       background: $color-theme;
       transform: rotate(8deg);
       vertical-align: middle;
+      @media screen and(min-width: 768px) {
+         margin-left: 20px;
+      }
    }
 
    h2 {
       display: inline-block;
       flex: 0;
+      @media screen and(min-width: 768px) {
+         flex: unset;
+      }
    }
 }
 
 .swiper-button-next,
 .swiper-button-prev {
    display: none;
+   width: 60px;
+   height: 60px;
+   background: $background-color-arrow-slider;
+   @media screen and(min-width: 1024px) {
+      display: block;
+   }
+
+   &:hover {
+      background: $color-border-theme;
+   }
 }
 
 .swiper-pagination {
@@ -120,10 +152,20 @@ section {
 
 .swiper-pagination-bullet {
    margin: 10px !important;
-   width: 13px;
-   height: 13px;
+   width: 15px;
+   height: 15px;
 }
 
 .swiper-pagination-bullet-active {
    background: $color-theme;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+   opacity: 0;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+   display: none;
 }

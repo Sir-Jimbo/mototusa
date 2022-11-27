@@ -1,6 +1,12 @@
 .consumables {
+   &__container {
+      padding: 0;
+      @media screen and(min-width: 1024px) {
+         position: relative;
+         padding: 0 110px;
+      }
+   }
    &__slider {
-      overflow: unset;
       &::before {
          z-index: 2;
          right: 0;
@@ -11,6 +17,9 @@
          top: 0;
          bottom: 0;
          padding: 20px;
+         @media screen and(min-width: 1024px) {
+            display: none;
+         }
       }
       &::after {
          left: 0;
@@ -23,16 +32,34 @@
          bottom: 0;
          padding: 20px;
          z-index: 2;
+         @media screen and(min-width: 1024px) {
+            display: none;
+         }
+      }
+      @media screen and(min-width: 1024px) {
+         position: unset;
       }
    }
 
    &__card {
+      text-align: center;
+
+      &:hover &--title a {
+         color: $color-border-theme;
+         transition: color 0.3s;
+      }
+
+      &:hover &--button &--link {
+         color: $color-border-theme;
+         border-color: $color-theme;
+         transition: color 0.3s;
+      }
+
       &--top {
          height: 110px;
          margin-bottom: 10px;
-
-         img {
-            margin: 0;
+         @media screen and(min-width: 1024px) {
+            margin-bottom: 20px;
          }
       }
 
@@ -42,8 +69,21 @@
          line-height: 18px;
          margin-bottom: 30px;
 
+         @media screen and(min-width: 1024px) {
+            line-height: 20px;
+         }
+
          a {
             color: $color-theme;
+            @media screen and(min-width: 1024px) {
+               color: $color-text-link-desktop;
+               text-decoration: none;
+               white-space: nowrap;
+               overflow: hidden;
+               text-overflow: ellipsis;
+               width: 100%;
+               display: block;
+            }
          }
       }
 
@@ -60,14 +100,65 @@
       }
 
       &--link {
-         display: inline-block;
+         position: relative;
+         display: block;
          color: $color-text-second;
+         padding-left: 15px;
+
+         &:hover {
+            color: $color-border-theme;
+
+            .consumables__card--icon {
+               opacity: 1;
+            }
+         }
       }
 
       &--button {
          font-size: 14px;
          font-weight: 700;
          margin-top: 15px;
+
+         .consumables__card--link {
+            padding: 10px;
+            border: 1px solid transparent;
+         }
+
+         &:hover .consumables__card--link {
+            background: $color-theme;
+            color: $background-color-main !important;
+         }
       }
+
+      &--icon {
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: auto;
+         bottom: 0;
+         margin: auto;
+         width: 10px;
+         height: 15px;
+         transform: rotate(-90deg);
+         fill: $color-border-theme;
+         opacity: 0;
+         transition: opacity 0.3s;
+      }
+   }
+
+   &__icon--arrow {
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      fill: $color-text;
+   }
+
+   &__button--next &__icon--arrow {
+      right: 30px;
+   }
+
+   &__button--prev &__icon--arrow {
+      left: 30px;
+      transform: rotate(180deg);
    }
 }
