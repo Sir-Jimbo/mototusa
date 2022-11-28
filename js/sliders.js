@@ -162,3 +162,20 @@ const photogalery = new Swiper('.photogalery__slider', {
 
 
 });
+
+const hero = new Swiper('.hero__slider', {
+   // Optional parameters
+   //spaceBetween: 15,
+   loop: true,
+   autoplay: true,
+   watchOverflow: true,
+
+
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+   },
+
+
+
+});

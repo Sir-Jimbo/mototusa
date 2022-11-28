@@ -240,6 +240,76 @@
       <main class="main">
          <section class="hero">
             <h1>Мотоцикли з Європи, Японії та США</h1>
+            <div class="swiper hero__slider">
+               <!-- Additional required wrapper -->
+               <div class="swiper-wrapper hero__wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide hero__slide">
+                     <picture>
+                        <source srcset="./images/hero-slide-1.webp" type="image/webp">
+                        <img src="./images/hero-slide-1.png" alt="oxford">
+                     </picture>
+                  </div>
+                  <div class="swiper-slide hero__slide">
+                     <picture>
+                        <source srcset="./images/hero-slide-1.webp" type="image/webp">
+                        <img src="./images/hero-slide-1.png" alt="oxford">
+                     </picture>
+                  </div>
+               </div>
+
+               <div class="swiper-pagination hero__pagination"></div>
+
+            </div>
+            <div class="hero__filter model">
+               <div class="hero__filter--title">
+                  <span>Запчасти по Модели</span>
+               </div>
+               <div class="hero__filter--content ">
+                  <form class="hero__filter--form" action="/m/" method="post">
+                     <div class="hero__filter--items">
+                        <div class="hero__filter--block">
+                           <p>Марка</p>
+                           <div class="hero__filter--item">
+                              <span>Выбрать</span>
+                              <svg class="hero__filter--icon">
+                                 <use href="./icons/sprite.svg#icon-arrow"></use>
+                              </svg>
+                           </div>
+                        </div>
+                        <div class="hero__filter--block">
+                           <p>Модель</p>
+                           <div class="hero__filter--item">
+                              <span>Выбрать</span>
+                              <svg class="hero__filter--icon">
+                                 <use href="./icons/sprite.svg#icon-arrow"></use>
+                              </svg>
+                           </div>
+                        </div>
+                        <div class="hero__filter--block">
+                           <p>Объем двигателя</p>
+                           <div class="hero__filter--item">
+                              <span>Выбрать</span>
+                              <svg class="hero__filter--icon">
+                                 <use href="./icons/sprite.svg#icon-arrow"></use>
+                              </svg>
+                           </div>
+                        </div>
+                        <div class="hero__filter--block">
+                           <p>Год выпуска</p>
+                           <div class="hero__filter--item">
+                              <span>Выбрать</span>
+                              <svg class="hero__filter--icon">
+                                 <use href="./icons/sprite.svg#icon-arrow"></use>
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                     <button class="hero__filter--button" type="submit" aria-label="filter submit">Подбор
+                        мотозапчастей</button>
+                  </form>
+               </div>
+            </div>
             <div class="hero__banner first">
                <div class="hero__filter">
                   <div class="hero__filter--title">
@@ -321,30 +391,84 @@
                   </div>
                </div>
             </div>
-            <a class="hero__banner banner-link two" href="#" aria-label="banner link">
-               <div class="banner-link__title">ЭКИПИРОВКА</div>
-               <div class="banner-link__more">
-                  <span class="banner-link__description">Любых Размеров</span>
-                  <span class="banner-link__button">
-                     Подробнее
-                     <svg class="banner-link__icon">
-                        <use href="./icons/sprite.svg#icon-arrow-button"></use>
-                     </svg>
-                  </span>
+            <div class="hero__container">
+               <div class="hero__banners">
+                  <a class="hero__banner banner-link two" href="#" aria-label="banner link">
+                     <div class="banner-link__title">ЭКИПИРОВКА</div>
+                     <div class="banner-link__more">
+                        <span class="banner-link__description">Любых Размеров</span>
+                        <span class="banner-link__button">
+                           Подробнее
+                           <svg class="banner-link__icon">
+                              <use href="./icons/sprite.svg#icon-arrow-button"></use>
+                           </svg>
+                        </span>
+                     </div>
+                  </a>
+                  <a class="hero__banner banner-link three" href="#" aria-label="banner link">
+                     <div class="banner-link__title">ЗАПЧАСТИ OEM</div>
+                     <div class="banner-link__more">
+                        <span class="banner-link__button">
+                           Подробнее
+                           <svg class="banner-link__icon">
+                              <use href="./icons/sprite.svg#icon-arrow-button"></use>
+                           </svg>
+                        </span>
+                     </div>
+                  </a>
                </div>
-            </a>
-            <a class="hero__banner banner-link three" href="#" aria-label="banner link">
-               <div class="banner-link__title">ЗАПЧАСТИ OEM</div>
-               <div class="banner-link__more">
-                  <span class="banner-link__description">Любых Размеров</span>
-                  <span class="banner-link__button">
-                     Подробнее
-                     <svg class="banner-link__icon">
-                        <use href="./icons/sprite.svg#icon-arrow-button"></use>
-                     </svg>
-                  </span>
+               <div class="hero__banner--filter">
+                  <div class="hero__filter cycle">
+                     <div class="hero__filter--title">
+                        <span>ПОДБОР МОТОШИН</span>
+                     </div>
+                     <div class="hero__filter--content ">
+                        <form class="hero__filter--form" action="/m/" method="post">
+                           <div class="hero__filter--items">
+                              <div class="hero__filter--block">
+                                 <p>Применение</p>
+                                 <div class="hero__filter--item">
+                                    <span>Выбрать</span>
+                                    <svg class="hero__filter--icon">
+                                       <use href="./icons/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <div class="hero__filter--block">
+                                 <p>Диаметр обода [дюйм]</p>
+                                 <div class="hero__filter--item">
+                                    <span>Выбрать</span>
+                                    <svg class="hero__filter--icon">
+                                       <use href="./icons/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <div class="hero__filter--block">
+                                 <p>Ширина</p>
+                                 <div class="hero__filter--item">
+                                    <span>Выбрать</span>
+                                    <svg class="hero__filter--icon">
+                                       <use href="./icons/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <div class="hero__filter--block">
+                                 <p>Высота профиля</p>
+                                 <div class="hero__filter--item">
+                                    <span>Выбрать</span>
+                                    <svg class="hero__filter--icon">
+                                       <use href="./icons/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                           <button class="hero__filter--button" type="submit" aria-label="filter submit">Подбор
+                              мотозапчастей</button>
+                        </form>
+                     </div>
+                  </div>
                </div>
-            </a>
+            </div>
          </section>
          <section class="sale">
             <div class="section-title">
